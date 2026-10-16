@@ -157,6 +157,13 @@
   .cert-item:last-child{ border-bottom:none; }
   .cert-item .mk{ font-family:'JetBrains Mono'; color:var(--red); font-size:0.85rem; }
 
+  .cert-collection{border:1px solid var(--line); background:var(--panel); padding:8px 18px; margin-top:10px;}
+  .cert-collection a{display:flex; flex-direction:column; gap:2px; padding:12px 0; border-bottom:1px solid var(--line); transition:color .2s ease;}
+  .cert-collection a:last-child{border-bottom:none;}
+  .cert-collection a strong{font-size:.92rem; font-weight:600; color:var(--white);}
+  .cert-collection a span{font-size:.78rem; color:var(--dim);}
+  .cert-collection a:hover strong,.cert-collection a:hover span{color:var(--red);}
+
   .badge-list{ display:flex; flex-wrap:wrap; gap:10px; }
   .badge{ border:1px solid var(--line); padding:8px 16px; font-family:'JetBrains Mono'; font-size:0.8rem; color:var(--dim); transition:all .2s ease; }
   .badge:hover{ border-color:var(--red); color:var(--red); }
@@ -377,15 +384,17 @@
         <div class="cert-item"><span class="mk">•</span><div><strong>Institute:</strong><p style="color:var(--dim);">Besant Technologies, with hands-on technical training and practical projects.</p></div></div>
         <div class="cert-item"><span class="mk">•</span><div><strong>Duration:</strong><p style="color:var(--dim);">6 Months, gaining practical exposure to cloud services, DevOps tools, and infrastructure management.</p></div></div>
         <h3 style="font-size:1.1rem; margin:26px 0 10px;">Certifications &amp; Courses</h3>
-        <div class="cert-item"><span class="mk">01</span><div>AWS automation in cloud · 2025 <p style="color:var(--dim);">Credential: <a href="https://coursera.org/verify/QM0YNZTV9VFC" target="_blank" rel="noopener">Verify on Coursera ↗</a></p></div></div>
-        <div class="cert-item"><span class="mk">02</span><div><a href="https://coursera.org/verify/9VL9EN6Z18JM" target="_blank" rel="noopener">Introduction to Git and GitHub ↗</a><p style="color:var(--dim);">Google · Coursera</p></div></div>
-        <div class="cert-item"><span class="mk">03</span><div><a href="https://coursera.org/verify/CD7E60NPF7KD" target="_blank" rel="noopener">Jenkins: Automating Your Delivery Pipeline ↗</a><p style="color:var(--dim);">Coursera Project Network</p></div></div>
-        <div class="cert-item"><span class="mk">04</span><div><a href="https://coursera.org/verify/3U3AKKL8RU01" target="_blank" rel="noopener">Continuous Delivery &amp; DevOps ↗</a><p style="color:var(--dim);">University of Virginia · Coursera</p></div></div>
-        <div class="cert-item"><span class="mk">05</span><div><a href="https://coursera.org/verify/88FIMU4J9KBZ" target="_blank" rel="noopener">Fundamentals of Ansible ↗</a><p style="color:var(--dim);">Red Hat · Coursera</p></div></div>
-        <div class="cert-item"><span class="mk">06</span><div><a href="https://coursera.org/verify/KU2IEH6VZWTL" target="_blank" rel="noopener">Create Serverless Applications ↗</a><p style="color:var(--dim);">Microsoft · Coursera</p></div></div>
-        <div class="cert-item"><span class="mk">07</span><div><a href="https://coursera.org/verify/H7S3JCATBG5A" target="_blank" rel="noopener">Infrastructure Automation with Terraform ↗</a><p style="color:var(--dim);">Whizlabs · Coursera</p></div></div>
-        <div class="cert-item"><span class="mk">08</span><div><a href="https://coursera.org/verify/Q19NPQIKB9XP" target="_blank" rel="noopener">Configuration Management and the Cloud ↗</a><p style="color:var(--dim);">Google · Coursera</p></div></div>
-        <div class="cert-item"><span class="mk">09</span><div><a href="https://coursera.org/verify/AEV3AUFPJEOT" target="_blank" rel="noopener">DevOps and Jenkins Fundamentals ↗</a><p style="color:var(--dim);">LearnKartS · Coursera</p></div></div>
+        <div class="cert-collection">
+          <a href="https://coursera.org/verify/QM0YNZTV9VFC" target="_blank" rel="noopener"><strong>AWS Automation in Cloud</strong><span>2025 · Verify on Coursera ↗</span></a>
+          <a href="https://coursera.org/verify/9VL9EN6Z18JM" target="_blank" rel="noopener"><strong>Introduction to Git and GitHub</strong><span>Google · Coursera ↗</span></a>
+          <a href="https://coursera.org/verify/CD7E60NPF7KD" target="_blank" rel="noopener"><strong>Jenkins: Automating Your Delivery Pipeline</strong><span>Coursera Project Network ↗</span></a>
+          <a href="https://coursera.org/verify/3U3AKKL8RU01" target="_blank" rel="noopener"><strong>Continuous Delivery &amp; DevOps</strong><span>University of Virginia · Coursera ↗</span></a>
+          <a href="https://coursera.org/verify/88FIMU4J9KBZ" target="_blank" rel="noopener"><strong>Fundamentals of Ansible</strong><span>Red Hat · Coursera ↗</span></a>
+          <a href="https://coursera.org/verify/KU2IEH6VZWTL" target="_blank" rel="noopener"><strong>Create Serverless Applications</strong><span>Microsoft · Coursera ↗</span></a>
+          <a href="https://coursera.org/verify/H7S3JCATBG5A" target="_blank" rel="noopener"><strong>Infrastructure Automation with Terraform</strong><span>Whizlabs · Coursera ↗</span></a>
+          <a href="https://coursera.org/verify/Q19NPQIKB9XP" target="_blank" rel="noopener"><strong>Configuration Management and the Cloud</strong><span>Google · Coursera ↗</span></a>
+          <a href="https://coursera.org/verify/AEV3AUFPJEOT" target="_blank" rel="noopener"><strong>DevOps and Jenkins Fundamentals</strong><span>LearnKartS · Coursera ↗</span></a>
+        </div>
       </div>
       <div>
         <h3 style="font-size:1.1rem; margin-bottom:12px;">AWS &amp; DevOps Practical Exposure</h3>
